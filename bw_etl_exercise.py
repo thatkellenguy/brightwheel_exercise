@@ -196,6 +196,16 @@ def write_to_csv(input, output_file, source, ts, append=True):
                 ts
                 ])	
 
+def testing():
+    '''
+    Didn't get time to build this out but as illustration, there are a few checks I would do right off the bat:
+    - Verify the source and destination counts match for each movement
+    - Verify uniqueness of the PK I used and created
+    - Verify uniqueness of phone number which I intend to use to clean and deduplicate this further
+    - Add data type verification into each step (e.g., is the phone number an INT? does the email follow an email format?) 
+        By doing this prior to loading, we could spit out invalid lines prior to the load and process them separately.
+    '''
+
 
 if __name__ == '__main__':
     header = [{"id":"id", "provider_name":"provider_name", "provider_type":"provider_type", "address":"address", "city":"city", "zip":"zip", "phone":"phone", "email":"email", "owner_name":"owner_name"}]
