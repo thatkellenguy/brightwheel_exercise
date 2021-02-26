@@ -37,4 +37,5 @@ What I didn't see that I thought I would:
 Clone this repository.
 
 `pipenv install`
+
 `pipenv run python3 bw_etl_exercise.py`
