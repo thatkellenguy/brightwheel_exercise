@@ -18,6 +18,7 @@ What I ran out of time for:
     - This is currently designed as a complete batch load
 - Was unable to parse the HTML for page total and create a process to loop through all pages to load, only able to get one example page
     - For what it's worth, I would have parse the "Page N of NN" cell on the page and done a simple loop editing the URL source each time
+- Gather SSL certs to avoid warnings
 
 What I learned:
 - Very little prior experience in HTML scraping so what you see is barely scratching the surface of what I'll be able to learn
@@ -31,3 +32,9 @@ What I felt very confident in:
 What I didn't see that I thought I would:
 - More "dirty data".  These inputs were actually pretty clean and most of the challenge was realigning the data and learning to scrape HTML.
 
+## But, thatkellenguy, how do I run it?
+
+Clone this repository.
+
+`pipenv install`
+`pipenv run python3 bw_etl_exercise.py`
