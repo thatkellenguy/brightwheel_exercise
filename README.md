@@ -2,6 +2,29 @@
 
 Thanks for taking the time to look at my project!
 
+## What language, frameworks, and/or libraries were used
+
+This project was written in Python 3.7 using mostly built-in libaries (ie, datetime, csv). I did, however, use two external libraries (see: Pipfile):
+- requests: for handling GET requests on the web services
+- bs4 (BeautifulSoup): for parsing HTML
+
+If I had been able to get to loading this into a database or better automated unit testing I would have used these libraries as well:
+- psycopg2: common library for connecting and interacting with most database services
+- pytest: for running unit tests on translation or expected outcomes
+- boto3: for interacting with AWS CLI commands
+- argparse: for providing more robust use of arguments
+
+
+## But, thatkellenguy, how do I run it?
+
+Clone this repository.
+
+`pipenv install`
+
+`pipenv run python3 bw_etl_exercise.py`
+
+## Tell us about the experience
+
 What I got done:
 - Parsed, transformed (where necessary), and combined all three sources into one CSV output
 - Scraped the HTML source despite inconsistencies in the HTML format (improper table rows)
@@ -32,10 +55,3 @@ What I felt very confident in:
 What I didn't see that I thought I would:
 - More "dirty data".  These inputs were actually pretty clean and most of the challenge was realigning the data and learning to scrape HTML.
 
-## But, thatkellenguy, how do I run it?
-
-Clone this repository.
-
-`pipenv install`
-
-`pipenv run python3 bw_etl_exercise.py`
